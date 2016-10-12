@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual_Keyboard", "Virtual_Keyboard\Virtual_Keyboard.csproj", "{F82FDCAC-345F-49D4-A444-D90679ABFC78}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SVK Installer", "SVK Installer\SVK Installer.vdproj", "{2F2D6985-2F92-4C18-8FC4-BCA38512563F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F82FDCAC-345F-49D4-A444-D90679ABFC78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82FDCAC-345F-49D4-A444-D90679ABFC78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82FDCAC-345F-49D4-A444-D90679ABFC78}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82FDCAC-345F-49D4-A444-D90679ABFC78}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2F2D6985-2F92-4C18-8FC4-BCA38512563F}.Debug|Any CPU.ActiveCfg = Debug
+		{2F2D6985-2F92-4C18-8FC4-BCA38512563F}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
