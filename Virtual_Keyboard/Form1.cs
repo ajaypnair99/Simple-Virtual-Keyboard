@@ -267,7 +267,7 @@ namespace Virtual_Keyboard
         private void BackspaceButton_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyDown(VirtualKeyCode.BACK);
-            Back_SpaceButton.MouseDown += new MouseEventHandler(MouseDown);
+           Back_SpaceButton.MouseDown += new MouseEventHandler(MouseDown);
             PreviousButtonDisplay.Text += "Backspace,";
         }
 
@@ -1106,8 +1106,6 @@ namespace Virtual_Keyboard
         {
             removechecker = false;
         }
-
-       
 
     }
 
