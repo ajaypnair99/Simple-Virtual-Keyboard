@@ -266,10 +266,18 @@ namespace Virtual_Keyboard
         //BackspaceButton
         private void BackspaceButton_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{BACKSPACE}");
+            InputSimulator.SimulateKeyDown(VirtualKeyCode.BACK);
+            Back_SpaceButton.MouseDown += new MouseEventHandler(MouseDown);
             PreviousButtonDisplay.Text += "Backspace,";
         }
 
+        private void MouseDown (object sender, EventArgs e)
+        {
+
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.BACK);
+            BackspaceButton_Click(sender , e);
+
+        }
         //Qbutton
         private void Qbutton_Click_1(object sender, EventArgs e)
         {
