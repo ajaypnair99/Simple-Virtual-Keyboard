@@ -1122,7 +1122,7 @@
             this.ExtendButton.TabIndex = 87;
             this.ExtendButton.Text = "Extend";
             this.ExtendButton.UseVisualStyleBackColor = true;
-            this.ExtendButton.Click += new System.EventHandler(this.button1_Click);
+            this.ExtendButton.Click += new System.EventHandler(this.ExtendButton_Click);
             // 
             // PWRUSRButton
             // 
@@ -1132,7 +1132,7 @@
             this.PWRUSRButton.Name = "PWRUSRButton";
             this.PWRUSRButton.Size = new System.Drawing.Size(162, 53);
             this.PWRUSRButton.TabIndex = 88;
-            this.PWRUSRButton.Text = "Extend";
+            this.PWRUSRButton.Text = "Power User";
             this.PWRUSRButton.UseVisualStyleBackColor = true;
             this.PWRUSRButton.Click += new System.EventHandler(this.PWRUSRButton_Click);
             // 

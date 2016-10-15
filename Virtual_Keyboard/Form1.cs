@@ -28,7 +28,7 @@ namespace Virtual_Keyboard
     public partial class Form1 : Form
     {
 
-        public Boolean removechecker = false;
+        public Boolean IsOpenedf2 = false;
         // [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
         // public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
         /*
@@ -39,7 +39,7 @@ namespace Virtual_Keyboard
         //  private const int MOUSEEVENTF_RIGHTDOWN = 0x08;
         //  private const int MOUSEEVENTF_RIGHTUP = 0x10;
 
-            
+
         //double value;
         //to make the window on the top most position 
         static readonly IntPtr HWND_TOPMOST = new IntPtr(-1);
@@ -83,7 +83,7 @@ namespace Virtual_Keyboard
                 SendKeys.Send("!");
                 PreviousButtonDisplay.Text += "!,";
             }
-            else if (removechecker == false)
+            else if (IsOpenedf2 == false)
             {
                 SendKeys.Send("1");
                 PreviousButtonDisplay.Text += "1,";
@@ -100,7 +100,7 @@ namespace Virtual_Keyboard
                 SendKeys.Send("@");
                 PreviousButtonDisplay.Text += "@,";
             }
-            else if (removechecker == false)
+            else if (IsOpenedf2 == false)
             {
                 SendKeys.Send("2");
                 PreviousButtonDisplay.Text += "2,";
@@ -118,7 +118,7 @@ namespace Virtual_Keyboard
                 PreviousButtonDisplay.Text += "#,";
 
             }
-            else if (removechecker == false)
+            else if (IsOpenedf2 == false)
             {
                 SendKeys.Send("3");
                 PreviousButtonDisplay.Text += "3,";
@@ -134,7 +134,7 @@ namespace Virtual_Keyboard
                 SendKeys.Send("$");
                 PreviousButtonDisplay.Text += "$,";
             }
-            else if (removechecker == false)
+            else if (IsOpenedf2 == false)
             {
                 SendKeys.Send("4");
                 PreviousButtonDisplay.Text += "4,";
@@ -149,7 +149,7 @@ namespace Virtual_Keyboard
                 SendKeys.Send("{%}");
                 PreviousButtonDisplay.Text += "%,";
             }
-            else if (removechecker == false)
+            else if (IsOpenedf2 == false)
             {
                 SendKeys.Send("5");
                 PreviousButtonDisplay.Text += "5,";
@@ -164,7 +164,7 @@ namespace Virtual_Keyboard
                 SendKeys.Send("{^}");
                 PreviousButtonDisplay.Text += "^,";
             }
-            else if (removechecker == false)
+            else if (IsOpenedf2 == false)
             {
                 SendKeys.Send("6");
                 PreviousButtonDisplay.Text += "6,";
@@ -180,7 +180,7 @@ namespace Virtual_Keyboard
                 PreviousButtonDisplay.Text += "&,";
 
             }
-            else if (removechecker == false)
+            else if (IsOpenedf2 == false)
             {
                 SendKeys.Send("7");
                 PreviousButtonDisplay.Text += "7,";
@@ -195,7 +195,7 @@ namespace Virtual_Keyboard
                 SendKeys.Send("*");
                 PreviousButtonDisplay.Text += "*,";
             }
-            else if (removechecker == false)
+            else if (IsOpenedf2 == false)
 
             {
                 SendKeys.Send("8");
@@ -211,7 +211,7 @@ namespace Virtual_Keyboard
                 SendKeys.Send("(");
                 PreviousButtonDisplay.Text += "(,";
             }
-            else if (removechecker == false)
+            else if (IsOpenedf2 == false)
             {
                 SendKeys.Send("9");
                 PreviousButtonDisplay.Text += "9,";
@@ -226,7 +226,7 @@ namespace Virtual_Keyboard
                 SendKeys.Send(")");
                 PreviousButtonDisplay.Text += "),";
             }
-            else if (removechecker == false)
+            else if (IsOpenedf2 == false)
             {
                 SendKeys.Send("0");
                 PreviousButtonDisplay.Text += "0,";
@@ -1088,15 +1088,24 @@ namespace Virtual_Keyboard
             PreviousButtonDisplay.Text = "CLEAR";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+        private void ExtendButton_Click(object sender, EventArgs e)
         {
+            //IsOpenedf2is to check if form 2 is opened and will not allow the number keys on top to work
+            //I used the same variable to check if the form is open so that multiple instances cannot be opened together
+            //IsOpenedf2 decleration is at the top of the code
             Form2 f2 = new Form2();
-            f2.Show();
-            f2.Location = new Point(this.Location.X +this.Width, this.Location.Y);
 
-            removechecker = true;
-            MessageBox.Show("Opening the extended Numpad will render the number keys useless, you can still use it for special characters", "Warning. To regain access , close the Extended Window" ,MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+            if (IsOpenedf2 == false)
+            {
+                MessageBox.Show("Opening the extended Numpad will render the number keys useless, you can still use it for special characters", "Warning. To regain access , close the Extended Window", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                f2.Show();
+                f2.Location = new Point(this.Location.X + this.Width, this.Location.Y);
+                IsOpenedf2 = true;
+            }else if ( IsOpenedf2 == true)
+            {
+                MessageBox.Show("Don't");
+            }
             f2.FormClosed += new FormClosedEventHandler(Form2_FormClosed);
 
         }
@@ -1104,16 +1113,40 @@ namespace Virtual_Keyboard
 
         void Form2_FormClosed(object sender, EventArgs e)
         {
-            removechecker = false;
+            IsOpenedf2 = false;
         }
 
+
+        // Power User accessing button
+        Boolean IsOpenedf3; //global variable to see if form 3 is opened 
         public void PWRUSRButton_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();
-            Form2 f2 = new Form2();
-            f3.Show();
-            f3.Location = new Point(f2.Location.X , f2.Location.Y + f2.Height);
+            Form3 f3 = new Form3(); // accessing form 3 
+            Form2 f2 = new Form2(); // accessing form 2
+
+            if (IsOpenedf3 == false) // checking if form 3 is opened 
+            {
+                //if form 3 opened is false
+                MessageBox.Show("This mode will alow you to have addition functionality such as copy , paste shortcuts, etc", "Power User : Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                f3.Show(); //displaying form 3
+                f3.Location = new Point(f2.Location.X, f2.Location.Y + f2.Height); //setting its co-ordinates
+                IsOpenedf3 = true; // setting form 3 open to true
+            }else if(IsOpenedf3 == true)
+            {
+                MessageBox.Show("Don't"); // message displayed if form 3 is already open
+            }
+
+            //Handler to check if form 3 is closed
+            f3.FormClosed += new FormClosedEventHandler(Form3_FormClosed);
         }
+
+        //Method to check if form 3 is closed
+        void Form3_FormClosed(object sender , EventArgs e)
+        {
+            //If closed , Opened = false
+            IsOpenedf3 = false;
+        }
+
     }
 
 }

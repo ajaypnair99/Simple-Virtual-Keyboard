@@ -105,6 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Virtual_Keyboard.Properties.Resources.Mountain_VK3;
             this.ClientSize = new System.Drawing.Size(329, 448);
             this.Controls.Add(this.alttabbutton);
             this.Controls.Add(this.WinTabbutton);
@@ -113,7 +114,7 @@
             this.Controls.Add(this.Copybutton);
             this.Controls.Add(this.ctrlaltdelbutton);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "Power User Pannel";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
 
