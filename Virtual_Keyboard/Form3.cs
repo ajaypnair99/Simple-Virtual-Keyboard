@@ -45,7 +45,8 @@ namespace Virtual_Keyboard
             SetWindowPos(Handle, HWND_TOPMOST, 0, 0, 0, 0, TOPMOST_FLAGS);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        //Control + Alt + Delete
+        private void ControlAltDel_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateModifiedKeyStroke(
                 new[] { VirtualKeyCode.CONTROL, VirtualKeyCode.MENU },
@@ -53,24 +54,34 @@ namespace Virtual_Keyboard
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        //Copy Keystroke
+        private void Copy_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_C);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        //Paste Keystroke
+        private void Paste_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_V);
         }
 
+        //Windows + Tab
         private void WinTabbutton_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.RWIN, VirtualKeyCode.TAB);
         }
 
+        //Alt + Tab
         private void alttabbutton_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.MENU, VirtualKeyCode.TAB);
+        }
+
+        //Undo
+        private void undo_Click(object sender, EventArgs e)
+        {
+            InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_Z);
         }
     }
     }

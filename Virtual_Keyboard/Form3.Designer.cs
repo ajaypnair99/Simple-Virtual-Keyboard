@@ -34,6 +34,7 @@
             this.Selectallbutton = new System.Windows.Forms.Button();
             this.WinTabbutton = new System.Windows.Forms.Button();
             this.alttabbutton = new System.Windows.Forms.Button();
+            this.undo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ctrlaltdelbutton
@@ -45,7 +46,7 @@
             this.ctrlaltdelbutton.TabIndex = 0;
             this.ctrlaltdelbutton.Text = "Control Alt Delete";
             this.ctrlaltdelbutton.UseVisualStyleBackColor = true;
-            this.ctrlaltdelbutton.Click += new System.EventHandler(this.button1_Click);
+            this.ctrlaltdelbutton.Click += new System.EventHandler(this.ControlAltDel_Click);
             // 
             // Copybutton
             // 
@@ -56,7 +57,7 @@
             this.Copybutton.TabIndex = 1;
             this.Copybutton.Text = "COPY";
             this.Copybutton.UseVisualStyleBackColor = true;
-            this.Copybutton.Click += new System.EventHandler(this.button2_Click);
+            this.Copybutton.Click += new System.EventHandler(this.Copy_Click);
             // 
             // PasteButton
             // 
@@ -67,7 +68,7 @@
             this.PasteButton.TabIndex = 2;
             this.PasteButton.Text = "PASTE";
             this.PasteButton.UseVisualStyleBackColor = true;
-            this.PasteButton.Click += new System.EventHandler(this.button3_Click);
+            this.PasteButton.Click += new System.EventHandler(this.Paste_Click);
             // 
             // Selectallbutton
             // 
@@ -101,12 +102,24 @@
             this.alttabbutton.UseVisualStyleBackColor = true;
             this.alttabbutton.Click += new System.EventHandler(this.alttabbutton_Click);
             // 
+            // undo
+            // 
+            this.undo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.undo.Location = new System.Drawing.Point(170, 230);
+            this.undo.Name = "undo";
+            this.undo.Size = new System.Drawing.Size(152, 103);
+            this.undo.TabIndex = 6;
+            this.undo.Text = "ctrl + z";
+            this.undo.UseVisualStyleBackColor = true;
+            this.undo.Click += new System.EventHandler(this.undo_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Virtual_Keyboard.Properties.Resources.Mountain_VK3;
             this.ClientSize = new System.Drawing.Size(329, 448);
+            this.Controls.Add(this.undo);
             this.Controls.Add(this.alttabbutton);
             this.Controls.Add(this.WinTabbutton);
             this.Controls.Add(this.Selectallbutton);
@@ -128,5 +141,6 @@
         private System.Windows.Forms.Button Selectallbutton;
         private System.Windows.Forms.Button WinTabbutton;
         private System.Windows.Forms.Button alttabbutton;
+        private System.Windows.Forms.Button undo;
     }
 }
