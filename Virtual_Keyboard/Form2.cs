@@ -146,13 +146,30 @@ namespace Virtual_Keyboard
 
         }
 
+        Boolean IsForm2Opened;
         private void pwrUSRbutton_Click(object sender, EventArgs e)
         {
             Form3 f3 = new Form3();
-            f3.Show();
-            f3.Location = new Point(this.Location.X, this.Location.Y + this.Height);
-            
+            if (IsForm2Opened == false) // checking if from2 is opened 
+            {// If false
+                MessageBox.Show("This mode will alow you to have addition functionality such as copy , paste shortcuts, etc", "Power User : Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                f3.Show();
+                f3.Location = new Point(this.Location.X, this.Location.Y + this.Height);
+                IsForm2Opened = true;
+            }
+            else if (IsForm2Opened == true)
+            {
+                MessageBox.Show("You already have one instance of window running , you cannot open another" , "Warning : An instance is already running" , MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            f3.FormClosed += new FormClosedEventHandler(Form3_Closed);
         }
+
+        void Form3_Closed(object sender , EventArgs e)
+        {
+            IsForm2Opened = false; // setting form 2 opened as false
+        }
+        
     }
 }
     

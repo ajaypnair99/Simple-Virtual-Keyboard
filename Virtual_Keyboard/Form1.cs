@@ -1133,7 +1133,8 @@ namespace Virtual_Keyboard
                 IsOpenedf3 = true; // setting form 3 open to true
             }else if(IsOpenedf3 == true)
             {
-                MessageBox.Show("Don't"); // message displayed if form 3 is already open
+                // message displayed if form 3 is already open
+                MessageBox.Show("You already have one instance of window running , you cannot open another", "Warning : An instance is already running", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
             }
 
             //Handler to check if form 3 is closed
