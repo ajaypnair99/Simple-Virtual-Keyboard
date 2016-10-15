@@ -115,6 +115,7 @@
             this.RightButton = new System.Windows.Forms.Button();
             this.Clear_Button = new System.Windows.Forms.Button();
             this.ExtendButton = new System.Windows.Forms.Button();
+            this.PWRUSRButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // esc
@@ -949,7 +950,7 @@
             this.TransparencyButton.Minimum = 40;
             this.TransparencyButton.Name = "TransparencyButton";
             this.TransparencyButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TransparencyButton.Size = new System.Drawing.Size(380, 28);
+            this.TransparencyButton.Size = new System.Drawing.Size(278, 28);
             this.TransparencyButton.TabIndex = 74;
             this.TransparencyButton.Value = 40;
             this.TransparencyButton.Scroll += new System.Windows.Forms.ScrollEventHandler(this.TransparencyButton_Scroll);
@@ -1080,7 +1081,6 @@
             this.PreviousButtonDisplay.Name = "PreviousButtonDisplay";
             this.PreviousButtonDisplay.Size = new System.Drawing.Size(305, 60);
             this.PreviousButtonDisplay.TabIndex = 85;
-//            this.PreviousButtonDisplay.VisibleChanged += new System.EventHandler(this.PreviousButtonDisplay_VisibleChanged);
             // 
             // RefreshTimer
             // 
@@ -1124,6 +1124,18 @@
             this.ExtendButton.UseVisualStyleBackColor = true;
             this.ExtendButton.Click += new System.EventHandler(this.button1_Click);
             // 
+            // PWRUSRButton
+            // 
+            this.PWRUSRButton.AutoSize = true;
+            this.PWRUSRButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PWRUSRButton.Location = new System.Drawing.Point(656, 420);
+            this.PWRUSRButton.Name = "PWRUSRButton";
+            this.PWRUSRButton.Size = new System.Drawing.Size(162, 53);
+            this.PWRUSRButton.TabIndex = 88;
+            this.PWRUSRButton.Text = "Extend";
+            this.PWRUSRButton.UseVisualStyleBackColor = true;
+            this.PWRUSRButton.Click += new System.EventHandler(this.PWRUSRButton_Click);
+            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -1133,6 +1145,7 @@
             this.BackgroundImage = global::Virtual_Keyboard.Properties.Resources.Mountain_VK3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1185, 489);
+            this.Controls.Add(this.PWRUSRButton);
             this.Controls.Add(this.ExtendButton);
             this.Controls.Add(this.Clear_Button);
             this.Controls.Add(this.PreviousButtonDisplay);
@@ -1327,6 +1340,7 @@
         private System.Windows.Forms.Button RightButton;
         private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.Button ExtendButton;
+        private System.Windows.Forms.Button PWRUSRButton;
     }
 }
 

@@ -145,6 +145,14 @@ namespace Virtual_Keyboard
             f2.Location = p;
 
         }
+
+        private void pwrUSRbutton_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.Show();
+            f3.Location = new Point(this.Location.X, this.Location.Y + this.Height);
+            
+        }
     }
 }
     

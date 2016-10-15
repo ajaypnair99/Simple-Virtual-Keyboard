@@ -8,3 +8,4 @@ F:\all things\Codes\C++ codes\VB code\Virtual_Keyboard\Virtual_Keyboard\obj\Debu
 F:\all things\Codes\C++ codes\VB code\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.pdb
 F:\all things\Codes\C++ codes\VB code\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.Form2.resources
 F:\all things\Codes\C++ codes\VB code\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.csprojResolveAssemblyReference.cache
+F:\all things\Codes\C++ codes\VB code\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.Form3.resources

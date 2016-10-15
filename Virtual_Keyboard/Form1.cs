@@ -1014,8 +1014,8 @@ namespace Virtual_Keyboard
         //Alt button
         private void AltButton_Click(object sender, EventArgs e)
         {
-            InputSimulator.SimulateKeyPress(VirtualKeyCode.RMENU);
-            PreviousButtonDisplay.Text += "Winmenu";
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.MENU);
+            PreviousButtonDisplay.Text += "ALT";
         }
 
         //Volume Up button
@@ -1107,6 +1107,13 @@ namespace Virtual_Keyboard
             removechecker = false;
         }
 
+        public void PWRUSRButton_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            Form2 f2 = new Form2();
+            f3.Show();
+            f3.Location = new Point(f2.Location.X , f2.Location.Y + f2.Height);
+        }
     }
 
 }

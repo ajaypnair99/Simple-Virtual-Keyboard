@@ -45,6 +45,7 @@
             this.prtscnButton = new System.Windows.Forms.Button();
             this.endButton = new System.Windows.Forms.Button();
             this.RightClickKey = new System.Windows.Forms.Button();
+            this.pwrUSRbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Num7
@@ -234,6 +235,17 @@
             this.RightClickKey.UseVisualStyleBackColor = true;
             this.RightClickKey.Click += new System.EventHandler(this.RightClickKey_Click);
             // 
+            // pwrUSRbutton
+            // 
+            this.pwrUSRbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pwrUSRbutton.Location = new System.Drawing.Point(212, 231);
+            this.pwrUSRbutton.Name = "pwrUSRbutton";
+            this.pwrUSRbutton.Size = new System.Drawing.Size(115, 67);
+            this.pwrUSRbutton.TabIndex = 17;
+            this.pwrUSRbutton.Text = "Power User";
+            this.pwrUSRbutton.UseVisualStyleBackColor = true;
+            this.pwrUSRbutton.Click += new System.EventHandler(this.pwrUSRbutton_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,6 +253,7 @@
             this.AutoSize = true;
             this.BackgroundImage = global::Virtual_Keyboard.Properties.Resources.Mountain_VK3;
             this.ClientSize = new System.Drawing.Size(539, 320);
+            this.Controls.Add(this.pwrUSRbutton);
             this.Controls.Add(this.RightClickKey);
             this.Controls.Add(this.endButton);
             this.Controls.Add(this.prtscnButton);
@@ -284,5 +297,6 @@
         private System.Windows.Forms.Button prtscnButton;
         private System.Windows.Forms.Button endButton;
         private System.Windows.Forms.Button RightClickKey;
+        private System.Windows.Forms.Button pwrUSRbutton;
     }
 }
