@@ -447,7 +447,7 @@
             this.Shift_CheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Shift_CheckBox.Location = new System.Drawing.Point(12, 290);
             this.Shift_CheckBox.Name = "Shift_CheckBox";
-            this.Shift_CheckBox.Size = new System.Drawing.Size(79, 29);
+            this.Shift_CheckBox.Size = new System.Drawing.Size(110, 57);
             this.Shift_CheckBox.TabIndex = 28;
             this.Shift_CheckBox.Text = "Shift";
             this.Shift_CheckBox.UseVisualStyleBackColor = false;

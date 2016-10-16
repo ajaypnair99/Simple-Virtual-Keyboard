@@ -84,5 +84,5 @@ namespace Virtual_Keyboard
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_Z);
         }
     }
-    }
+ }
 
