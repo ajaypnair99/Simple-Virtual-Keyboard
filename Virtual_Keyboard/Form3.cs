@@ -83,6 +83,11 @@ namespace Virtual_Keyboard
         {
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_Z);
         }
+
+        private void ctrlTab_Click(object sender, EventArgs e)
+        {
+            InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.TAB);
+        }
     }
  }
 

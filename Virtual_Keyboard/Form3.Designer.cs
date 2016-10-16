@@ -35,6 +35,7 @@
             this.WinTabbutton = new System.Windows.Forms.Button();
             this.alttabbutton = new System.Windows.Forms.Button();
             this.undo = new System.Windows.Forms.Button();
+            this.ctrlTab = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ctrlaltdelbutton
@@ -113,12 +114,24 @@
             this.undo.UseVisualStyleBackColor = true;
             this.undo.Click += new System.EventHandler(this.undo_Click);
             // 
+            // ctrlTab
+            // 
+            this.ctrlTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctrlTab.Location = new System.Drawing.Point(170, 339);
+            this.ctrlTab.Name = "ctrlTab";
+            this.ctrlTab.Size = new System.Drawing.Size(152, 103);
+            this.ctrlTab.TabIndex = 7;
+            this.ctrlTab.Text = "ctrl + tab";
+            this.ctrlTab.UseVisualStyleBackColor = true;
+            this.ctrlTab.Click += new System.EventHandler(this.ctrlTab_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Virtual_Keyboard.Properties.Resources.Mountain_VK3;
             this.ClientSize = new System.Drawing.Size(329, 448);
+            this.Controls.Add(this.ctrlTab);
             this.Controls.Add(this.undo);
             this.Controls.Add(this.alttabbutton);
             this.Controls.Add(this.WinTabbutton);
@@ -142,5 +155,6 @@
         private System.Windows.Forms.Button WinTabbutton;
         private System.Windows.Forms.Button alttabbutton;
         private System.Windows.Forms.Button undo;
+        private System.Windows.Forms.Button ctrlTab;
     }
 }

@@ -1104,7 +1104,7 @@ namespace Virtual_Keyboard
                 IsOpenedf2 = true;
             }else if ( IsOpenedf2 == true)
             {
-                MessageBox.Show("Don't");
+                MessageBox.Show("You already have one instance of window running , you cannot open another", "Warning : An instance is already running", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             f2.FormClosed += new FormClosedEventHandler(Form2_FormClosed);
 
