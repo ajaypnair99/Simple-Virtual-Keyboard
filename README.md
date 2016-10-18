@@ -10,3 +10,6 @@ Clicking on The CLEAR button will clear the previously clicked button display in
 
 Clicking on EXTEND will enable a numpad view. NOTE : RightClick might not work. 
 
+There are 3 branches , Master , Advancedkeyboard , transparent 
+
+The advanced keyboard will have some additional functionality and the Transparent branch is same as advanced keyboard with transparent keys
