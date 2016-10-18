@@ -960,7 +960,7 @@ namespace Virtual_Keyboard
         {
 
             this.Opacity = TransparencyButton.Value / (double)100;
-
+            
             /*
              TransparencyButton.Maximum = 100;
              TransparencyButton.Minimum = 20;

@@ -1083,12 +1083,13 @@
             // TransparencyButton
             // 
             this.TransparencyButton.Location = new System.Drawing.Point(367, 434);
-            this.TransparencyButton.Minimum = 40;
+            this.TransparencyButton.Maximum = 150;
+            this.TransparencyButton.Minimum = 50;
             this.TransparencyButton.Name = "TransparencyButton";
             this.TransparencyButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.TransparencyButton.Size = new System.Drawing.Size(278, 28);
             this.TransparencyButton.TabIndex = 74;
-            this.TransparencyButton.Value = 40;
+            this.TransparencyButton.Value = 70;
             this.TransparencyButton.Scroll += new System.Windows.Forms.ScrollEventHandler(this.TransparencyButton_Scroll);
             // 
             // DeleteButton

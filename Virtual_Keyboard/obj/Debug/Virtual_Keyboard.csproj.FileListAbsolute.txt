@@ -12,3 +12,11 @@ F:\all things\Codes\C++ codes\VB code\Virtual_Keyboard\Virtual_Keyboard\obj\Debu
 C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\bin\Debug\Virtual_Keyboard.exe.config
 C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.exe
 C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.pdb
+C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\bin\Debug\Virtual_Keyboard.exe
+C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\bin\Debug\Virtual_Keyboard.pdb
+C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.csprojResolveAssemblyReference.cache
+C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.Form1.resources
+C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.Form2.resources
+C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.Form3.resources
+C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.Properties.Resources.resources
+C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.csproj.GenerateResource.Cache
