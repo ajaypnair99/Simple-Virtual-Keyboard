@@ -15,14 +15,50 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_55DFD2AEC2F203DC608178926C240BCB"
+        "MsmKey" = "8:_21CEFE1F9B70D3C0765665F8CC173A66"
         "OwnerKey" = "8:_C8F575441FF84554A80560AE9E0D97B8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_21CEFE1F9B70D3C0765665F8CC173A66"
+        "OwnerKey" = "8:_B5F2F702151249B3A4A5FE72025C9861"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_21CEFE1F9B70D3C0765665F8CC173A66"
+        "OwnerKey" = "8:_5F21D62BF8514AA7AC357E1C808AF33E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5F21D62BF8514AA7AC357E1C808AF33E"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_97DA0C70E57CA8250A1B14928DF23FF8"
         "OwnerKey" = "8:_C8F575441FF84554A80560AE9E0D97B8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_97DA0C70E57CA8250A1B14928DF23FF8"
+        "OwnerKey" = "8:_B5F2F702151249B3A4A5FE72025C9861"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_97DA0C70E57CA8250A1B14928DF23FF8"
+        "OwnerKey" = "8:_5F21D62BF8514AA7AC357E1C808AF33E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B5F2F702151249B3A4A5FE72025C9861"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -34,19 +70,31 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_97DA0C70E57CA8250A1B14928DF23FF8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_C8F575441FF84554A80560AE9E0D97B8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_55DFD2AEC2F203DC608178926C240BCB"
+        "OwnerKey" = "8:_B5F2F702151249B3A4A5FE72025C9861"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5F21D62BF8514AA7AC357E1C808AF33E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_21CEFE1F9B70D3C0765665F8CC173A66"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_97DA0C70E57CA8250A1B14928DF23FF8"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -67,6 +115,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -83,6 +139,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -112,14 +176,14 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_55DFD2AEC2F203DC608178926C240BCB"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_21CEFE1F9B70D3C0765665F8CC173A66"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:InputSimulator, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_55DFD2AEC2F203DC608178926C240BCB"
+                    "_21CEFE1F9B70D3C0765665F8CC173A66"
                     {
                     "Name" = "8:InputSimulator.dll"
                     "Attributes" = "3:512"
@@ -789,6 +853,62 @@
         }
         "ProjectOutput"
         {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_5F21D62BF8514AA7AC357E1C808AF33E"
+            {
+            "SourcePath" = "8:..\\Virtual_Keyboard\\obj\\Debug\\Virtual_Keyboard.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_E189DE374FA14A588811B235601AC2EE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{F82FDCAC-345F-49D4-A444-D90679ABFC78}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B5F2F702151249B3A4A5FE72025C9861"
+            {
+            "SourcePath" = "8:..\\Virtual_Keyboard\\obj\\Debug\\Virtual_Keyboard.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_23F411A29C9449D292832C5D9785D7C6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{F82FDCAC-345F-49D4-A444-D90679ABFC78}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C8F575441FF84554A80560AE9E0D97B8"
             {
             "SourcePath" = "8:..\\Virtual_Keyboard\\obj\\Debug\\Virtual_Keyboard.exe"
