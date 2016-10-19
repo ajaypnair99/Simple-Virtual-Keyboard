@@ -44,7 +44,6 @@
             this.Num0 = new System.Windows.Forms.Button();
             this.prtscnButton = new System.Windows.Forms.Button();
             this.endButton = new System.Windows.Forms.Button();
-            this.RightClickKey = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Num7
@@ -223,17 +222,6 @@
             this.endButton.UseVisualStyleBackColor = true;
             this.endButton.Click += new System.EventHandler(this.endButton_Click);
             // 
-            // RightClickKey
-            // 
-            this.RightClickKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RightClickKey.Location = new System.Drawing.Point(333, 231);
-            this.RightClickKey.Name = "RightClickKey";
-            this.RightClickKey.Size = new System.Drawing.Size(194, 67);
-            this.RightClickKey.TabIndex = 16;
-            this.RightClickKey.Text = "RightClick";
-            this.RightClickKey.UseVisualStyleBackColor = true;
-            this.RightClickKey.Click += new System.EventHandler(this.RightClickKey_Click);
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,7 +229,6 @@
             this.AutoSize = true;
             this.BackgroundImage = global::Virtual_Keyboard.Properties.Resources.Mountain_VK3;
             this.ClientSize = new System.Drawing.Size(539, 320);
-            this.Controls.Add(this.RightClickKey);
             this.Controls.Add(this.endButton);
             this.Controls.Add(this.prtscnButton);
             this.Controls.Add(this.Num0);
@@ -283,6 +270,5 @@
         private System.Windows.Forms.Button Num0;
         private System.Windows.Forms.Button prtscnButton;
         private System.Windows.Forms.Button endButton;
-        private System.Windows.Forms.Button RightClickKey;
     }
 }
