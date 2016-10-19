@@ -31,11 +31,11 @@
             this.ctrlaltdelbutton = new System.Windows.Forms.Button();
             this.Copybutton = new System.Windows.Forms.Button();
             this.PasteButton = new System.Windows.Forms.Button();
-            this.Selectallbutton = new System.Windows.Forms.Button();
             this.WinTabbutton = new System.Windows.Forms.Button();
-            this.alttabbutton = new System.Windows.Forms.Button();
             this.undo = new System.Windows.Forms.Button();
             this.ctrlTab = new System.Windows.Forms.Button();
+            this.Selectallbutton = new System.Windows.Forms.Button();
+            this.alttabbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ctrlaltdelbutton
@@ -77,19 +77,6 @@
             this.PasteButton.UseVisualStyleBackColor = false;
             this.PasteButton.Click += new System.EventHandler(this.Paste_Click);
             // 
-            // Selectallbutton
-            // 
-            this.Selectallbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Selectallbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Selectallbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Selectallbutton.Location = new System.Drawing.Point(12, 339);
-            this.Selectallbutton.Name = "Selectallbutton";
-            this.Selectallbutton.Size = new System.Drawing.Size(152, 103);
-            this.Selectallbutton.TabIndex = 3;
-            this.Selectallbutton.Text = "Select All";
-            this.Selectallbutton.UseVisualStyleBackColor = false;
-            this.Selectallbutton.Click += new System.EventHandler(this.Selectallbutton_Click);
-            // 
             // WinTabbutton
             // 
             this.WinTabbutton.BackColor = System.Drawing.Color.Transparent;
@@ -102,19 +89,6 @@
             this.WinTabbutton.Text = "Win + Tab";
             this.WinTabbutton.UseVisualStyleBackColor = false;
             this.WinTabbutton.Click += new System.EventHandler(this.WinTabbutton_Click);
-            // 
-            // alttabbutton
-            // 
-            this.alttabbutton.BackColor = System.Drawing.Color.Transparent;
-            this.alttabbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.alttabbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alttabbutton.Location = new System.Drawing.Point(170, 121);
-            this.alttabbutton.Name = "alttabbutton";
-            this.alttabbutton.Size = new System.Drawing.Size(152, 103);
-            this.alttabbutton.TabIndex = 5;
-            this.alttabbutton.Text = "Alt + Tab";
-            this.alttabbutton.UseVisualStyleBackColor = false;
-            this.alttabbutton.Click += new System.EventHandler(this.alttabbutton_Click);
             // 
             // undo
             // 
@@ -142,6 +116,32 @@
             this.ctrlTab.UseVisualStyleBackColor = false;
             this.ctrlTab.Click += new System.EventHandler(this.ctrlTab_Click);
             // 
+            // Selectallbutton
+            // 
+            this.Selectallbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Selectallbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Selectallbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Selectallbutton.Location = new System.Drawing.Point(12, 339);
+            this.Selectallbutton.Name = "Selectallbutton";
+            this.Selectallbutton.Size = new System.Drawing.Size(152, 103);
+            this.Selectallbutton.TabIndex = 3;
+            this.Selectallbutton.Text = "Select All";
+            this.Selectallbutton.UseVisualStyleBackColor = false;
+            this.Selectallbutton.Click += new System.EventHandler(this.Selectallbutton_Click);
+            // 
+            // alttabbutton
+            // 
+            this.alttabbutton.BackColor = System.Drawing.Color.Transparent;
+            this.alttabbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.alttabbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alttabbutton.Location = new System.Drawing.Point(170, 121);
+            this.alttabbutton.Name = "alttabbutton";
+            this.alttabbutton.Size = new System.Drawing.Size(152, 103);
+            this.alttabbutton.TabIndex = 5;
+            this.alttabbutton.Text = "Alt + Tab";
+            this.alttabbutton.UseVisualStyleBackColor = false;
+            this.alttabbutton.Click += new System.EventHandler(this.alttabbutton_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -168,10 +168,10 @@
         private System.Windows.Forms.Button ctrlaltdelbutton;
         private System.Windows.Forms.Button Copybutton;
         private System.Windows.Forms.Button PasteButton;
-        private System.Windows.Forms.Button Selectallbutton;
         private System.Windows.Forms.Button WinTabbutton;
-        private System.Windows.Forms.Button alttabbutton;
         private System.Windows.Forms.Button undo;
         private System.Windows.Forms.Button ctrlTab;
+        private System.Windows.Forms.Button Selectallbutton;
+        private System.Windows.Forms.Button alttabbutton;
     }
 }

@@ -49,8 +49,8 @@ namespace Virtual_Keyboard
         private void ControlAltDel_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateModifiedKeyStroke(
-                new[] { VirtualKeyCode.CONTROL, VirtualKeyCode.MENU },
-                VirtualKeyCode.DELETE);
+                 VirtualKeyCode.CONTROL, VirtualKeyCode.MENU);
+            InputSimulator.SimulateKeyDown(VirtualKeyCode.DELETE);
 
         }
 
@@ -73,10 +73,10 @@ namespace Virtual_Keyboard
         }
 
         //Alt + Tab
-        private void alttabbutton_Click(object sender, EventArgs e)
+        /*private void alttabbutton_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.MENU, VirtualKeyCode.TAB);
-        }
+        }*/
 
         //Undo
         private void undo_Click(object sender, EventArgs e)
@@ -90,6 +90,11 @@ namespace Virtual_Keyboard
         }
 
         private void Selectallbutton_Click(object sender, EventArgs e)
+        {
+            InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_A);
+        }
+
+        private void alttabbutton_Click(object sender, EventArgs e)
         {
 
         }
