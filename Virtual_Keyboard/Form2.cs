@@ -122,10 +122,10 @@ namespace Virtual_Keyboard
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NEXT);
         }
 
-        private void RightClickKey_Click(object sender, EventArgs e)
+        /*private void RightClickKey_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.RBUTTON);
-        }
+        }*/
 
         private void endButton_Click(object sender, EventArgs e)
         {

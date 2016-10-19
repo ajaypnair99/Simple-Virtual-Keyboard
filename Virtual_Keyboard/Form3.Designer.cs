@@ -28,28 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlaltdelbutton = new System.Windows.Forms.Button();
             this.Copybutton = new System.Windows.Forms.Button();
             this.PasteButton = new System.Windows.Forms.Button();
             this.WinTabbutton = new System.Windows.Forms.Button();
             this.undo = new System.Windows.Forms.Button();
-            this.ctrlTab = new System.Windows.Forms.Button();
             this.Selectallbutton = new System.Windows.Forms.Button();
             this.alttabbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // ctrlaltdelbutton
-            // 
-            this.ctrlaltdelbutton.BackColor = System.Drawing.Color.Transparent;
-            this.ctrlaltdelbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ctrlaltdelbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrlaltdelbutton.Location = new System.Drawing.Point(12, 12);
-            this.ctrlaltdelbutton.Name = "ctrlaltdelbutton";
-            this.ctrlaltdelbutton.Size = new System.Drawing.Size(152, 103);
-            this.ctrlaltdelbutton.TabIndex = 0;
-            this.ctrlaltdelbutton.Text = "Control Alt Delete";
-            this.ctrlaltdelbutton.UseVisualStyleBackColor = false;
-            this.ctrlaltdelbutton.Click += new System.EventHandler(this.ControlAltDel_Click);
             // 
             // Copybutton
             // 
@@ -69,7 +54,7 @@
             this.PasteButton.BackColor = System.Drawing.Color.Transparent;
             this.PasteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PasteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasteButton.Location = new System.Drawing.Point(12, 230);
+            this.PasteButton.Location = new System.Drawing.Point(170, 121);
             this.PasteButton.Name = "PasteButton";
             this.PasteButton.Size = new System.Drawing.Size(152, 103);
             this.PasteButton.TabIndex = 2;
@@ -82,7 +67,7 @@
             this.WinTabbutton.BackColor = System.Drawing.Color.Transparent;
             this.WinTabbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.WinTabbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WinTabbutton.Location = new System.Drawing.Point(170, 12);
+            this.WinTabbutton.Location = new System.Drawing.Point(12, 12);
             this.WinTabbutton.Name = "WinTabbutton";
             this.WinTabbutton.Size = new System.Drawing.Size(152, 103);
             this.WinTabbutton.TabIndex = 4;
@@ -95,7 +80,7 @@
             this.undo.BackColor = System.Drawing.Color.Transparent;
             this.undo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.undo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.undo.Location = new System.Drawing.Point(170, 230);
+            this.undo.Location = new System.Drawing.Point(12, 230);
             this.undo.Name = "undo";
             this.undo.Size = new System.Drawing.Size(152, 103);
             this.undo.TabIndex = 6;
@@ -103,25 +88,12 @@
             this.undo.UseVisualStyleBackColor = false;
             this.undo.Click += new System.EventHandler(this.undo_Click);
             // 
-            // ctrlTab
-            // 
-            this.ctrlTab.BackColor = System.Drawing.Color.Transparent;
-            this.ctrlTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ctrlTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctrlTab.Location = new System.Drawing.Point(170, 339);
-            this.ctrlTab.Name = "ctrlTab";
-            this.ctrlTab.Size = new System.Drawing.Size(152, 103);
-            this.ctrlTab.TabIndex = 7;
-            this.ctrlTab.Text = "ctrl + tab";
-            this.ctrlTab.UseVisualStyleBackColor = false;
-            this.ctrlTab.Click += new System.EventHandler(this.ctrlTab_Click);
-            // 
             // Selectallbutton
             // 
             this.Selectallbutton.BackColor = System.Drawing.Color.Transparent;
             this.Selectallbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Selectallbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Selectallbutton.Location = new System.Drawing.Point(12, 339);
+            this.Selectallbutton.Location = new System.Drawing.Point(170, 230);
             this.Selectallbutton.Name = "Selectallbutton";
             this.Selectallbutton.Size = new System.Drawing.Size(152, 103);
             this.Selectallbutton.TabIndex = 3;
@@ -134,7 +106,7 @@
             this.alttabbutton.BackColor = System.Drawing.Color.Transparent;
             this.alttabbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.alttabbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alttabbutton.Location = new System.Drawing.Point(170, 121);
+            this.alttabbutton.Location = new System.Drawing.Point(170, 12);
             this.alttabbutton.Name = "alttabbutton";
             this.alttabbutton.Size = new System.Drawing.Size(152, 103);
             this.alttabbutton.TabIndex = 5;
@@ -147,15 +119,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Virtual_Keyboard.Properties.Resources.Mountain_VK3;
-            this.ClientSize = new System.Drawing.Size(329, 448);
-            this.Controls.Add(this.ctrlTab);
+            this.ClientSize = new System.Drawing.Size(329, 348);
             this.Controls.Add(this.undo);
             this.Controls.Add(this.alttabbutton);
             this.Controls.Add(this.WinTabbutton);
             this.Controls.Add(this.Selectallbutton);
             this.Controls.Add(this.PasteButton);
             this.Controls.Add(this.Copybutton);
-            this.Controls.Add(this.ctrlaltdelbutton);
             this.Name = "Form3";
             this.Text = "Power User Pannel";
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -164,13 +134,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button ctrlaltdelbutton;
         private System.Windows.Forms.Button Copybutton;
         private System.Windows.Forms.Button PasteButton;
         private System.Windows.Forms.Button WinTabbutton;
         private System.Windows.Forms.Button undo;
-        private System.Windows.Forms.Button ctrlTab;
         private System.Windows.Forms.Button Selectallbutton;
         private System.Windows.Forms.Button alttabbutton;
     }

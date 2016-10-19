@@ -94,10 +94,7 @@ namespace Virtual_Keyboard
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_A);
         }
 
-        private void alttabbutton_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
  }
 
