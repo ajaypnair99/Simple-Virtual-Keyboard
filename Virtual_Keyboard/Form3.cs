@@ -38,6 +38,10 @@ namespace Virtual_Keyboard
         public Form3()
         {
             InitializeComponent();
+            int ScreenHeight = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height / 2.79);
+            int ScreenWidth = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Width / 5.56);
+
+            this.Size = new System.Drawing.Size(ScreenWidth, ScreenHeight);
         }
 
         private void Form3_Load(object sender, EventArgs e)

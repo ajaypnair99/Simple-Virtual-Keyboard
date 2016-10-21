@@ -66,11 +66,20 @@ namespace Virtual_Keyboard
 
         public Form1()
         {
-            
+            //Screenwidth / 2.67 , Screenheight / 1.954
             InitializeComponent();
+
+            //Conveeting Screenheight from double to int 
+            int ScreenWidth = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Width / 2.67);
+            int ScreenHeight = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height / 1.954);
+           
+
+            this.Size = new System.Drawing.Size(ScreenWidth, ScreenHeight);
+                
+
             this.Location = new Point(Width - (Width - 100), Height - (Height -100));
             this.StartPosition = FormStartPosition.Manual;
-
+            
         }
 
 
