@@ -1116,22 +1116,29 @@ namespace Virtual_Keyboard
             IsOpenedf2 = false;
         }
 
+        /*
+         * 
+         * Need to add some more code here to check if form3 is opened from form2
+         * The code is incomplete, but the application still works , the isntaller is not updated
+         */
+
 
         // Power User accessing button
-        Boolean IsOpenedf3; //global variable to see if form 3 is opened 
+        public Boolean IsOpenedf3; //global variable to see if form 3 is opened 
         public void PWRUSRButton_Click(object sender, EventArgs e)
         {
             Form3 f3 = new Form3(); // accessing form 3 
             Form2 f2 = new Form2(); // accessing form 2
 
-            if (IsOpenedf3 == false) // checking if form 3 is opened 
+            if (IsOpenedf3 == false ) // checking if form 3 is opened 
             {
                 //if form 3 opened is false
                 MessageBox.Show("This mode will alow you to have addition functionality such as copy , paste shortcuts, etc", "Power User : Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                f3.Show(); //displaying form 3
                 f3.Location = new Point(f2.Location.X, f2.Location.Y + f2.Height); //setting its co-ordinates
+                f3.Show(); //displaying form 3
+               
                 IsOpenedf3 = true; // setting form 3 open to true
-            }else if(IsOpenedf3 == true)
+            }else if(IsOpenedf3 == true )
             {
                 // message displayed if form 3 is already open
                 MessageBox.Show("You already have one instance of window running , you cannot open another", "Warning : An instance is already running", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
@@ -1148,6 +1155,13 @@ namespace Virtual_Keyboard
             IsOpenedf3 = false;
         }
 
+        //Boolean Isform3Openedfromf2;
+      //  public void form2openchecker()
+       // {
+            
+            
+            
+       // }
     }
 
 }

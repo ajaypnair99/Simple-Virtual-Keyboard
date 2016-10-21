@@ -41,6 +41,7 @@
             this.Copybutton.BackColor = System.Drawing.Color.Transparent;
             this.Copybutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Copybutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Copybutton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Copybutton.Location = new System.Drawing.Point(12, 121);
             this.Copybutton.Name = "Copybutton";
             this.Copybutton.Size = new System.Drawing.Size(152, 103);
@@ -54,6 +55,7 @@
             this.PasteButton.BackColor = System.Drawing.Color.Transparent;
             this.PasteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PasteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasteButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.PasteButton.Location = new System.Drawing.Point(170, 121);
             this.PasteButton.Name = "PasteButton";
             this.PasteButton.Size = new System.Drawing.Size(152, 103);
@@ -67,6 +69,7 @@
             this.WinTabbutton.BackColor = System.Drawing.Color.Transparent;
             this.WinTabbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.WinTabbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WinTabbutton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.WinTabbutton.Location = new System.Drawing.Point(12, 12);
             this.WinTabbutton.Name = "WinTabbutton";
             this.WinTabbutton.Size = new System.Drawing.Size(152, 103);
@@ -80,6 +83,7 @@
             this.undo.BackColor = System.Drawing.Color.Transparent;
             this.undo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.undo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.undo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.undo.Location = new System.Drawing.Point(12, 230);
             this.undo.Name = "undo";
             this.undo.Size = new System.Drawing.Size(152, 103);
@@ -93,6 +97,7 @@
             this.Selectallbutton.BackColor = System.Drawing.Color.Transparent;
             this.Selectallbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Selectallbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Selectallbutton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Selectallbutton.Location = new System.Drawing.Point(170, 230);
             this.Selectallbutton.Name = "Selectallbutton";
             this.Selectallbutton.Size = new System.Drawing.Size(152, 103);
@@ -106,13 +111,13 @@
             this.alttabbutton.BackColor = System.Drawing.Color.Transparent;
             this.alttabbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.alttabbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alttabbutton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.alttabbutton.Location = new System.Drawing.Point(170, 12);
             this.alttabbutton.Name = "alttabbutton";
             this.alttabbutton.Size = new System.Drawing.Size(152, 103);
             this.alttabbutton.TabIndex = 5;
             this.alttabbutton.Text = "Alt + Tab";
             this.alttabbutton.UseVisualStyleBackColor = false;
-            this.alttabbutton.Click += new System.EventHandler(this.alttabbutton_Click);
             // 
             // Form3
             // 
