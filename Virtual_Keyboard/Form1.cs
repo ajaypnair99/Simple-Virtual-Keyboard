@@ -73,9 +73,8 @@ namespace Virtual_Keyboard
             int ScreenWidth = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Width / 2.67);
             int ScreenHeight = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height / 1.954);
            
-
+            //Setting the form size relative to screen size 
             this.Size = new System.Drawing.Size(ScreenWidth, ScreenHeight);
-                
 
             this.Location = new Point(Width - (Width - 100), Height - (Height -100));
             this.StartPosition = FormStartPosition.Manual;

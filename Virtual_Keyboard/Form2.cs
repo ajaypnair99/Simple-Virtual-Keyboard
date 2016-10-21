@@ -44,6 +44,8 @@ namespace Virtual_Keyboard
         public Form2()
         {
             InitializeComponent();
+            
+            
             int ScreenWidth = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Width / 3.45);
             int ScreenHeight = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height / 3);
             
@@ -57,71 +59,83 @@ namespace Virtual_Keyboard
             
         }
 
+        //Num7 buton
         private void Num7_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NUMPAD7);
         }
 
+        //Num8 button
         private void Num8_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NUMPAD8);
         }
-
+        //Num9 button
         private void Num9_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NUMPAD9);
         }
-
+        //Num4 button
         private void Num4_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NUMPAD4);
         }
 
+        //Num5 button
         private void Num5_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NUMPAD5);
         }
 
+        //Num6 button
         private void Num6_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NUMPAD6);
         }
 
+        //Num1 button
         private void Num1_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NUMPAD1);
         }
 
+        //Num2 button
         private void Num2_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NUMPAD2);
         }
 
+        //Num3 button
         private void Num3_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NUMPAD3);
         }
 
+        //Num0 button
         private void Num0_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NUMPAD0);
         }
 
+        //PrintScr button
         private void prtscnButton_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.PRINT);
         }
 
+        //ScrollLock button
         private void scrlLockButton_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.SCROLL);
         }
 
+        //PageUp button
         private void PgUP_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.PRIOR);
         }
 
+        //PageDown button
         private void PgDWN_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NEXT);
@@ -132,16 +146,19 @@ namespace Virtual_Keyboard
             InputSimulator.SimulateKeyPress(VirtualKeyCode.RBUTTON);
         }*/
 
+        //Endbutton button
         private void endButton_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.END);
         }
 
+        //InsertButton button
         private void Insertbutton_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.INSERT);
         }
 
+        /*
         private void AttachCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             Form2 f2 = new Form2();
@@ -149,7 +166,7 @@ namespace Virtual_Keyboard
             Point p = this.PointToScreen(new Point(this.ClientRectangle.X, this.ClientRectangle.Y));
             f2.Location = p;
 
-        }
+        }*/
 
         Boolean IsForm3Opened;
         private void pwrUSRbutton_Click(object sender, EventArgs e)

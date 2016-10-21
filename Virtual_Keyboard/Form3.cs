@@ -38,8 +38,9 @@ namespace Virtual_Keyboard
         public Form3()
         {
             InitializeComponent();
-            int ScreenHeight = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height / 2.79);
+
             int ScreenWidth = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Width / 5.56);
+            int ScreenHeight = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height / 2.79);
 
             this.Size = new System.Drawing.Size(ScreenWidth, ScreenHeight);
         }
@@ -88,11 +89,13 @@ namespace Virtual_Keyboard
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_Z);
         }
 
+        //Control+Tab button
         private void ctrlTab_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.TAB);
         }
 
+        //SelectAll button
         private void Selectallbutton_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_A);
