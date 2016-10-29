@@ -63,16 +63,6 @@ namespace Virtual_Keyboard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mountain {
-            get {
-                object obj = ResourceManager.GetObject("Mountain", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Mountain_VK {
             get {
                 object obj = ResourceManager.GetObject("Mountain_VK", resourceCulture);
@@ -106,16 +96,6 @@ namespace Virtual_Keyboard.Properties {
         internal static System.Drawing.Bitmap Mountain_VK3 {
             get {
                 object obj = ResourceManager.GetObject("Mountain_VK3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Omkar {
-            get {
-                object obj = ResourceManager.GetObject("Omkar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

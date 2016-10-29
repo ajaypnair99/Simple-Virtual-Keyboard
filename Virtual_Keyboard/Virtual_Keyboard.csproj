@@ -131,9 +131,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Mountain.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Mountain_VK.png" />
   </ItemGroup>
   <ItemGroup>
@@ -144,9 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Mountain_VK1.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Omkar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
