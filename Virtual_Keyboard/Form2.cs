@@ -20,6 +20,7 @@ namespace Virtual_Keyboard
     public partial class Form2 : Form
     {
 
+
         static readonly IntPtr HWND_TOPMOST = new IntPtr(-1);
         static readonly IntPtr HWND_NOTOPMOST = new IntPtr(-2);
         static readonly IntPtr HWND_TOP = new IntPtr(0);
@@ -43,26 +44,32 @@ namespace Virtual_Keyboard
         }
         public Form2()
         {
+
+            
             InitializeComponent();
             
             
             int ScreenWidth = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Width / 3.45);
             int ScreenHeight = Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height / 3);
-            
 
             this.Size = new System.Drawing.Size(ScreenWidth, ScreenHeight);
+
         }
+        
 
         private void Form2_Load(object sender, EventArgs e)
         {
             SetWindowPos(Handle, HWND_TOPMOST, 0, 0, 0, 0, TOPMOST_FLAGS);
+
             
         }
 
         //Num7 buton
         private void Num7_Click(object sender, EventArgs e)
         {
+            
             InputSimulator.SimulateKeyPress(VirtualKeyCode.NUMPAD7);
+            
         }
 
         //Num8 button
@@ -194,6 +201,13 @@ namespace Virtual_Keyboard
             IsForm3Opened = false; // setting form 2 opened as false
         }
        
+        public void opacity()
+        {
+            Form1 f1 = new Form1();
+
+                this.Opacity = f1.TransparencyButton.Value/(double)100;
+
+        }
         
     }
 }

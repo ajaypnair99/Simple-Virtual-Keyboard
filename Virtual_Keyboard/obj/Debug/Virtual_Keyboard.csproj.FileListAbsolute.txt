@@ -20,3 +20,6 @@ C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_K
 C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.Form3.resources
 C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.Properties.Resources.resources
 C:\Users\Ajay Nair\Desktop\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.csproj.GenerateResource.Cache
+C:\Users\Ajay Nair\Desktop\Folders\Virtual_Keyboard\Virtual_Keyboard\bin\Debug\Virtual_Keyboard.exe.config
+C:\Users\Ajay Nair\Desktop\Folders\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.exe
+C:\Users\Ajay Nair\Desktop\Folders\Virtual_Keyboard\Virtual_Keyboard\obj\Debug\Virtual_Keyboard.pdb

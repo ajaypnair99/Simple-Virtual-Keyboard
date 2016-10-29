@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.esc = new System.Windows.Forms.Button();
@@ -117,6 +116,7 @@
             this.Clear_Button = new System.Windows.Forms.Button();
             this.ExtendButton = new System.Windows.Forms.Button();
             this.PWRUSRButton = new System.Windows.Forms.Button();
+            this.NightModeChckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // esc
@@ -1097,7 +1097,7 @@
             this.UPbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UPbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UPbutton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.UPbutton.Location = new System.Drawing.Point(895, 353);
+            this.UPbutton.Location = new System.Drawing.Point(918, 354);
             this.UPbutton.Name = "UPbutton";
             this.UPbutton.Size = new System.Drawing.Size(65, 57);
             this.UPbutton.TabIndex = 69;
@@ -1112,7 +1112,7 @@
             this.LeftButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LeftButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LeftButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LeftButton.Location = new System.Drawing.Point(824, 416);
+            this.LeftButton.Location = new System.Drawing.Point(847, 417);
             this.LeftButton.Name = "LeftButton";
             this.LeftButton.Size = new System.Drawing.Size(65, 57);
             this.LeftButton.TabIndex = 70;
@@ -1127,7 +1127,7 @@
             this.DownButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DownButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DownButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.DownButton.Location = new System.Drawing.Point(895, 416);
+            this.DownButton.Location = new System.Drawing.Point(918, 417);
             this.DownButton.Name = "DownButton";
             this.DownButton.Size = new System.Drawing.Size(65, 57);
             this.DownButton.TabIndex = 72;
@@ -1314,7 +1314,7 @@
             this.PreviousButtonDisplay.Location = new System.Drawing.Point(16, 417);
             this.PreviousButtonDisplay.Multiline = true;
             this.PreviousButtonDisplay.Name = "PreviousButtonDisplay";
-            this.PreviousButtonDisplay.Size = new System.Drawing.Size(305, 60);
+            this.PreviousButtonDisplay.Size = new System.Drawing.Size(212, 60);
             this.PreviousButtonDisplay.TabIndex = 85;
             // 
             // RefreshTimer
@@ -1330,7 +1330,7 @@
             this.RightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RightButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RightButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.RightButton.Location = new System.Drawing.Point(966, 416);
+            this.RightButton.Location = new System.Drawing.Point(989, 417);
             this.RightButton.Name = "RightButton";
             this.RightButton.Size = new System.Drawing.Size(65, 57);
             this.RightButton.TabIndex = 71;
@@ -1383,6 +1383,19 @@
             this.PWRUSRButton.UseVisualStyleBackColor = false;
             this.PWRUSRButton.Click += new System.EventHandler(this.PWRUSRButton_Click);
             // 
+            // NightModeChckBox
+            // 
+            this.NightModeChckBox.BackColor = System.Drawing.Color.Transparent;
+            this.NightModeChckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NightModeChckBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.NightModeChckBox.Location = new System.Drawing.Point(239, 418);
+            this.NightModeChckBox.Name = "NightModeChckBox";
+            this.NightModeChckBox.Size = new System.Drawing.Size(110, 57);
+            this.NightModeChckBox.TabIndex = 89;
+            this.NightModeChckBox.Text = "Night Mode";
+            this.NightModeChckBox.UseVisualStyleBackColor = false;
+            this.NightModeChckBox.CheckedChanged += new System.EventHandler(this.NightModeChckBox_CheckedChanged);
+            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -1392,6 +1405,7 @@
             this.BackgroundImage = global::Virtual_Keyboard.Properties.Resources.Mountain_VK3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1185, 489);
+            this.Controls.Add(this.NightModeChckBox);
             this.Controls.Add(this.PWRUSRButton);
             this.Controls.Add(this.ExtendButton);
             this.Controls.Add(this.Clear_Button);
@@ -1571,7 +1585,7 @@
         private System.Windows.Forms.Button LeftButton;
         private System.Windows.Forms.Button DownButton;
         private System.Windows.Forms.Button RwinButton;
-        private System.Windows.Forms.HScrollBar TransparencyButton;
+        public System.Windows.Forms.HScrollBar TransparencyButton;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button TabButton;
         private System.Windows.Forms.Button AltLButton;
@@ -1582,12 +1596,13 @@
         private System.Windows.Forms.Button LWin;
         private System.Windows.Forms.Button ControlButtonLeft;
         private System.Windows.Forms.CheckBox Caps_CheckBox;
-        private System.Windows.Forms.TextBox PreviousButtonDisplay;
+        public System.Windows.Forms.TextBox PreviousButtonDisplay;
         private System.Windows.Forms.Timer RefreshTimer;
         private System.Windows.Forms.Button RightButton;
         private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.Button ExtendButton;
         private System.Windows.Forms.Button PWRUSRButton;
+        public System.Windows.Forms.CheckBox NightModeChckBox;
     }
 }
 

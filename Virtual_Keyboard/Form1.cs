@@ -29,6 +29,7 @@ namespace Virtual_Keyboard
     {
 
         public Boolean IsOpenedf2 = false;
+        public Boolean NightModeChecker = false;
         // [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
         // public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
         /*
@@ -66,6 +67,11 @@ namespace Virtual_Keyboard
 
         public Form1()
         {
+
+            
+
+
+
             //Screenwidth / 2.67 , Screenheight / 1.954
             InitializeComponent();
 
@@ -80,7 +86,6 @@ namespace Virtual_Keyboard
             this.StartPosition = FormStartPosition.Manual;
             
         }
-
 
 
         //1 button
@@ -275,17 +280,11 @@ namespace Virtual_Keyboard
         private void BackspaceButton_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyDown(VirtualKeyCode.BACK);
-           Back_SpaceButton.MouseDown += new MouseEventHandler(MouseDown);
+           //Back_SpaceButton.MouseDown += new MouseEventHandler(MouseDown);
             PreviousButtonDisplay.Text += "Backspace,";
         }
 
-        private void MouseDown (object sender, EventArgs e)
-        {
-
-            InputSimulator.SimulateKeyPress(VirtualKeyCode.BACK);
-            BackspaceButton_Click(sender , e);
-
-        }
+        
         //Qbutton
         private void Qbutton_Click_1(object sender, EventArgs e)
         {
@@ -964,23 +963,15 @@ namespace Virtual_Keyboard
         //Value goes from 40 - 100 
         //Transparency.Min = 40 , Transparency.Max = 100;
         //Defaults to 100
-        private void TransparencyButton_Scroll(object sender, ScrollEventArgs e)
+        public void TransparencyButton_Scroll(object sender, ScrollEventArgs e)
         {
-
-            this.Opacity = TransparencyButton.Value / (double)100;
             
-            /*
-             TransparencyButton.Maximum = 100;
-             TransparencyButton.Minimum = 20;
-             TransparencyButton.Value = 50;
+            this.Opacity = TransparencyButton.Value / (double)100;
 
-
-            if(TransparencyButton.Value == TransparencyButton.Minimum)
-                this.Opacity = 0;
-            else if ( TransparencyButton.Value == TransparencyButton.Maximum) 
-                this.Opacity = 100;
-                */
-
+            Form2 f2 = new Form2();
+            f2.opacity();
+            // var form1OpacityVal = (Application.OpenForms["Form2"] as Form1).TransparencyButton.Value;
+            // this.Opacity = form1OpacityVal;
         }
 
         //Control button
@@ -1163,13 +1154,22 @@ namespace Virtual_Keyboard
             IsOpenedf3 = false;
         }
 
-        //Boolean Isform3Openedfromf2;
-      //  public void form2openchecker()
-       // {
-            
-            
-            
-       // }
+        public void NightModeChckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if(NightModeChckBox.Checked)
+            {
+                this.BackgroundImage = null;
+                this.BackColor = Color.Black;
+                NightModeChecker = true;
+                
+            }
+            if(NightModeChckBox.Checked == false)
+            {
+                this.BackgroundImage = global::Virtual_Keyboard.Properties.Resources.Mountain_VK3;
+                NightModeChecker = false;
+            }
+        }
+
     }
 
 }
