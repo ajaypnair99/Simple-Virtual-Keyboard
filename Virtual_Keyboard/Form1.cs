@@ -1,18 +1,10 @@
-﻿//using System.Collections.Generic;
-//using System.ComponentModel;
-//using System.Data;
-//using System.Drawing;
-//using System.Linq;
-//using System.Text;
-//using System.Windows;
-//using System.Threading.Tasks;
-//using System.Windows.Input;
-using System;
+﻿using System;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using WindowsInput;
 using System.IO;
 using System.Drawing;
+using System.Diagnostics;
 
 /// <summary>
 /// WARNING ! :
@@ -29,6 +21,7 @@ namespace Virtual_Keyboard
     {
 
         public Boolean IsOpenedf2 = false;
+        public Boolean IsOpenedf3 = false;
         // [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
         // public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
         /*
@@ -72,8 +65,6 @@ namespace Virtual_Keyboard
             this.StartPosition = FormStartPosition.Manual;
 
         }
-
-
 
         //1 button
         private void One_Click(object sender, EventArgs e)
@@ -293,7 +284,6 @@ namespace Virtual_Keyboard
             }
         }
 
-
         //Wbutton
         private void Wbutton_Click(object sender, EventArgs e)
         {
@@ -477,7 +467,6 @@ namespace Virtual_Keyboard
                 PreviousButtonDisplay.Text += backslash;
             }
 
-
         }
         
         //Abutton
@@ -555,7 +544,6 @@ namespace Virtual_Keyboard
                 PreviousButtonDisplay.Text += "g,";
             }
 
-            
         }
 
         //Hbutton
@@ -645,7 +633,7 @@ namespace Virtual_Keyboard
         //EnterButton
         private void EnterButton_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{ENTER}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.RETURN);
             PreviousButtonDisplay.Text += "ENTER,";
         }
 
@@ -659,84 +647,84 @@ namespace Virtual_Keyboard
         //F1button
         private void Function1_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{F1}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.F1);
             PreviousButtonDisplay.Text += "F1,";
         }
 
         //F2button
         private void Function2_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{F2}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.F2);
             PreviousButtonDisplay.Text += "F2,";
         }
 
         //F3button
         private void Function3_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{F3}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.F3);
             PreviousButtonDisplay.Text += "F3,";
         }
 
         //F4button
         private void Function4_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{F4}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.F4);
             PreviousButtonDisplay.Text += "F4,";
         }
 
         //F5button
         private void Function5_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{F5}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.F5);
             PreviousButtonDisplay.Text += "F5,";
         }
 
         //F6button
         private void Function6_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{F6}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.F6);
             PreviousButtonDisplay.Text += "F6,";
         }
 
         //F7button
         private void Function7_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{F7}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.F7);
             PreviousButtonDisplay.Text += "F7,";
         }
 
         //F8button
         private void Function8_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{F8}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.F8);
             PreviousButtonDisplay.Text += "F8,";
         }
 
         //F9button
         private void Function9_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{F9}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.F9);
             PreviousButtonDisplay.Text += "F9,";
         }
 
         //F10button
         private void Function10_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{F10}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.F10);
             PreviousButtonDisplay.Text += "F10,";
         }
 
         //F11button
         private void Function11_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{F11}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.F11);
             PreviousButtonDisplay.Text += "F11,";
         }
 
         //F12button
         private void Function12_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("{F12}");
+            InputSimulator.SimulateKeyPress(VirtualKeyCode.F12);
             PreviousButtonDisplay.Text += "F12,";
         }
 
@@ -929,7 +917,7 @@ namespace Virtual_Keyboard
         private void SpaceButton_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateKeyPress(VirtualKeyCode.SPACE);
-            PreviousButtonDisplay.Text += "SPACE,";
+            PreviousButtonDisplay.Text += " ";
         }
 
         
@@ -1088,9 +1076,10 @@ namespace Virtual_Keyboard
             PreviousButtonDisplay.Text = "CLEAR";
         }
 
-       
+        
         private void ExtendButton_Click(object sender, EventArgs e)
         {
+            //ExtendButtonclicked = true;
             //IsOpenedf2is to check if form 2 is opened and will not allow the number keys on top to work
             //I used the same variable to check if the form is open so that multiple instances cannot be opened together
             //IsOpenedf2 decleration is at the top of the code
@@ -1114,11 +1103,12 @@ namespace Virtual_Keyboard
         void Form2_FormClosed(object sender, EventArgs e)
         {
             IsOpenedf2 = false;
+            
         }
 
 
         // Power User accessing button
-        Boolean IsOpenedf3; //global variable to see if form 3 is opened 
+        //Boolean IsOpenedf3; //global variable to see if form 3 is opened 
         public void PWRUSRButton_Click(object sender, EventArgs e)
         {
             Form3 f3 = new Form3(); // accessing form 3 
@@ -1131,6 +1121,7 @@ namespace Virtual_Keyboard
                 f3.Show(); //displaying form 3
                 f3.Location = new Point(f2.Location.X, f2.Location.Y + f2.Height); //setting its co-ordinates
                 IsOpenedf3 = true; // setting form 3 open to true
+
             }else if(IsOpenedf3 == true)
             {
                 // message displayed if form 3 is already open
@@ -1148,6 +1139,81 @@ namespace Virtual_Keyboard
             IsOpenedf3 = false;
         }
 
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Simple Virtual Keyboard\nAuthor : REKTR3X99\nType : Beta\nVersion : 0.15b", "About",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void problemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/ajaypnair99/Simple-Virtual-Keyboard/issues");
+        }
+
+        private void requestsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/ajaypnair99/Simple-Virtual-Keyboard/blob/master/request.txt");
+        }
+
+        private void otherProjectsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/ajaypnair99");
+        }
+
+        public Boolean stripmenuclicked = false;
+        private void changeBackgroundToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            ChangeBackground();
+        }
+
+       
+        public void ChangeBackground()
+        {
+            var image = new System.Windows.Forms.OpenFileDialog();
+            image.Filter = "All Graphics Types|*.bmp;*.jpg;*.jpeg;*.png;*.tif;*.tiff";
+            if (image.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                
+                    string imagefile = image.FileName;
+
+                    System.IO.FileInfo File = new System.IO.FileInfo(image.FileName);
+
+                    this.BackgroundImage = Image.FromFile(image.FileName);
+
+
+                 Form f2 = new Form2();
+                 Form f3 = new Form3();
+                 
+                 f2.BackgroundImage = Image.FromFile(image.FileName);
+                 f2.Show();
+                 f2.Location = new Point(this.Location.X + this.Width, this.Location.Y);
+                 f2.Refresh();
+                 //f2.Close();
+
+                 f3.BackgroundImage = Image.FromFile(image.FileName);
+                 f3.Show();
+                 f3.Location = new Point(f2.Location.X, f2.Location.Y + f2.Height);
+                 f3.Refresh();
+                 //f3.Close();
+                
+            }
+            else
+            {
+                MessageBox.Show("Something went wrong", "Error", MessageBoxButtons.OK);
+                
+            }
+        }
+
+        private void contactMeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=15931af9e4891509");
+            
+        }
     }
 
 }

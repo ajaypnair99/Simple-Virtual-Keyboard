@@ -2,7 +2,7 @@
 //using System.Collections.Generic;
 //using System.ComponentModel;
 //using System.Data;
-//using System.Drawing;
+using System.Drawing;
 //using System.Linq;
 //using System.Text;
 //using System.Threading.Tasks;
@@ -37,6 +37,7 @@ namespace Virtual_Keyboard
         }
         public Form3()
         {
+            
             InitializeComponent();
         }
 
@@ -50,7 +51,7 @@ namespace Virtual_Keyboard
         {
             InputSimulator.SimulateModifiedKeyStroke(
                 new[] { VirtualKeyCode.CONTROL, VirtualKeyCode.MENU },
-                new[] { VirtualKeyCode.DELETE });
+                VirtualKeyCode.DELETE);
 
         }
 
@@ -87,6 +88,11 @@ namespace Virtual_Keyboard
         private void ctrlTab_Click(object sender, EventArgs e)
         {
             InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.TAB);
+        }
+
+        private void Selectallbutton_Click(object sender, EventArgs e)
+        {
+            InputSimulator.SimulateModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_A);
         }
     }
  }

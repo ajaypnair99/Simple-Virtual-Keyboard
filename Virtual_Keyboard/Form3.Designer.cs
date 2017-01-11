@@ -40,89 +40,106 @@
             // 
             // ctrlaltdelbutton
             // 
+            this.ctrlaltdelbutton.BackColor = System.Drawing.Color.Transparent;
+            this.ctrlaltdelbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ctrlaltdelbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ctrlaltdelbutton.Location = new System.Drawing.Point(12, 12);
             this.ctrlaltdelbutton.Name = "ctrlaltdelbutton";
             this.ctrlaltdelbutton.Size = new System.Drawing.Size(152, 103);
             this.ctrlaltdelbutton.TabIndex = 0;
             this.ctrlaltdelbutton.Text = "Control Alt Delete";
-            this.ctrlaltdelbutton.UseVisualStyleBackColor = true;
+            this.ctrlaltdelbutton.UseVisualStyleBackColor = false;
             this.ctrlaltdelbutton.Click += new System.EventHandler(this.ControlAltDel_Click);
             // 
             // Copybutton
             // 
+            this.Copybutton.BackColor = System.Drawing.Color.Transparent;
+            this.Copybutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Copybutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Copybutton.Location = new System.Drawing.Point(12, 121);
             this.Copybutton.Name = "Copybutton";
             this.Copybutton.Size = new System.Drawing.Size(152, 103);
             this.Copybutton.TabIndex = 1;
             this.Copybutton.Text = "COPY";
-            this.Copybutton.UseVisualStyleBackColor = true;
+            this.Copybutton.UseVisualStyleBackColor = false;
             this.Copybutton.Click += new System.EventHandler(this.Copy_Click);
             // 
             // PasteButton
             // 
+            this.PasteButton.BackColor = System.Drawing.Color.Transparent;
+            this.PasteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PasteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasteButton.Location = new System.Drawing.Point(12, 230);
             this.PasteButton.Name = "PasteButton";
             this.PasteButton.Size = new System.Drawing.Size(152, 103);
             this.PasteButton.TabIndex = 2;
             this.PasteButton.Text = "PASTE";
-            this.PasteButton.UseVisualStyleBackColor = true;
+            this.PasteButton.UseVisualStyleBackColor = false;
             this.PasteButton.Click += new System.EventHandler(this.Paste_Click);
             // 
             // Selectallbutton
             // 
+            this.Selectallbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Selectallbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Selectallbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Selectallbutton.Location = new System.Drawing.Point(12, 339);
             this.Selectallbutton.Name = "Selectallbutton";
             this.Selectallbutton.Size = new System.Drawing.Size(152, 103);
             this.Selectallbutton.TabIndex = 3;
             this.Selectallbutton.Text = "Select All";
-            this.Selectallbutton.UseVisualStyleBackColor = true;
+            this.Selectallbutton.UseVisualStyleBackColor = false;
+            this.Selectallbutton.Click += new System.EventHandler(this.Selectallbutton_Click);
             // 
             // WinTabbutton
             // 
+            this.WinTabbutton.BackColor = System.Drawing.Color.Transparent;
+            this.WinTabbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.WinTabbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WinTabbutton.Location = new System.Drawing.Point(170, 12);
             this.WinTabbutton.Name = "WinTabbutton";
             this.WinTabbutton.Size = new System.Drawing.Size(152, 103);
             this.WinTabbutton.TabIndex = 4;
             this.WinTabbutton.Text = "Win + Tab";
-            this.WinTabbutton.UseVisualStyleBackColor = true;
+            this.WinTabbutton.UseVisualStyleBackColor = false;
             this.WinTabbutton.Click += new System.EventHandler(this.WinTabbutton_Click);
             // 
             // alttabbutton
             // 
+            this.alttabbutton.BackColor = System.Drawing.Color.Transparent;
+            this.alttabbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.alttabbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alttabbutton.Location = new System.Drawing.Point(170, 121);
             this.alttabbutton.Name = "alttabbutton";
             this.alttabbutton.Size = new System.Drawing.Size(152, 103);
             this.alttabbutton.TabIndex = 5;
             this.alttabbutton.Text = "Alt + Tab";
-            this.alttabbutton.UseVisualStyleBackColor = true;
+            this.alttabbutton.UseVisualStyleBackColor = false;
             this.alttabbutton.Click += new System.EventHandler(this.alttabbutton_Click);
             // 
             // undo
             // 
+            this.undo.BackColor = System.Drawing.Color.Transparent;
+            this.undo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.undo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.undo.Location = new System.Drawing.Point(170, 230);
             this.undo.Name = "undo";
             this.undo.Size = new System.Drawing.Size(152, 103);
             this.undo.TabIndex = 6;
             this.undo.Text = "ctrl + z";
-            this.undo.UseVisualStyleBackColor = true;
+            this.undo.UseVisualStyleBackColor = false;
             this.undo.Click += new System.EventHandler(this.undo_Click);
             // 
             // ctrlTab
             // 
+            this.ctrlTab.BackColor = System.Drawing.Color.Transparent;
+            this.ctrlTab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ctrlTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ctrlTab.Location = new System.Drawing.Point(170, 339);
             this.ctrlTab.Name = "ctrlTab";
             this.ctrlTab.Size = new System.Drawing.Size(152, 103);
             this.ctrlTab.TabIndex = 7;
             this.ctrlTab.Text = "ctrl + tab";
-            this.ctrlTab.UseVisualStyleBackColor = true;
+            this.ctrlTab.UseVisualStyleBackColor = false;
             this.ctrlTab.Click += new System.EventHandler(this.ctrlTab_Click);
             // 
             // Form3
